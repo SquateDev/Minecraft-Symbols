@@ -37,11 +37,11 @@ def exit_logo():
   
 def menu(): 
  logo("menu");
- print(Fore.RED+"┓");
+ print(Fore.GREEB+"┓");
  print("┣ "+Fore.RED+"[1]"+Fore.WHITE+" Player::")
- print("┣ [2] MinecraftGame::")
- print("┣ [3] LevelRenderer::")
- print("┛")
+ print(Fore.GREEN+"┣ "+Fore.RED+"[2]"+Fore.WHITE+" MinecraftGame::")
+ print(Fore.GREEN+"┣ "+Fore.RED+"[3]"+Fore.WHITE+"LevelRenderer::")
+ print(Fore.GREEN+"┛")
  text_input = input("Введите Число : ")
  if "1" in text_input.lower():
   os.system("clear");
