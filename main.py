@@ -48,7 +48,7 @@ def menu():
   time.sleep(2);
   logo("player");
   exit_logo();
-  print(Fore.WHITE"[1] : Player::setSpeed(float)");
+  print(Fore.WHITE+"[1] : Player::setSpeed(float)");
   print("[2] : LocalPlayer::setSneaking(bool)")
   print("[3] : LocalPlayer::setSprinting(bool)");
   print("[4] : LocalPlayer::setLeavingLevel(bool)");
