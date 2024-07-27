@@ -48,14 +48,15 @@ def menu():
   time.sleep(2);
   logo("player");
   exit_logo();
-  print(Fore.WHITE+"[1] : Player::setSpeed(float)");
+  print(Fore.RED+"[1]"+Fore.WHITE+" : Player::setSpeed(float)");
   print(Fore.RED+"[2]"+Fore.WHITE+" : LocalPlayer::setSneaking(bool)")
   print(Fore.RED+"[3]"+Fore.WHITE+" : LocalPlayer::setSprinting(bool)");
-  print("[4] : LocalPlayer::setLeavingLevel(bool)");
-  print("[5] : LocalPlayer::setPortalEffectTime(float)");
-  text_1_input = input("Введите Число : ");
+  print(Fore.RED+"[4]"+Fore.WHITE+" : LocalPlayer::setLeavingLevel(bool)");
+  print(Fore.RED+"[5]"+Fore.WHITE+" : LocalPlayer::setPortalEffectTime(float)");
+  text_1_input = input(Fore.BLUE+"Введите Число : ");
   if "0" in text_1_input.lower():
    os.system("clear");
+   os.system("exit");
    time.sleep(0.2);
    menu();
   if "1" in text_1_input.lower():
