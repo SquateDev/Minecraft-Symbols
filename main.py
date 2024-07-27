@@ -38,19 +38,19 @@ def exit_logo():
 def menu(): 
  logo("menu");
  print(Fore.GREEN+"┓");
- print("┣ "+Fore.RED+"[1]"+Fore.WHITE+" Player::")
- print(Fore.GREEN+"┣ "+Fore.RED+"[2]"+Fore.WHITE+" MinecraftGame::")
- print(Fore.GREEN+"┣ "+Fore.RED+"[3]"+Fore.WHITE+"LevelRenderer::")
+ print("┣"+Fore.RED+"[1]"+Fore.WHITE+" Player::")
+ print(Fore.GREEN+"┣"+Fore.RED+"[2]"+Fore.WHITE+" MinecraftGame::")
+ print(Fore.GREEN+"┣"+Fore.RED+"[3]"+Fore.WHITE+" LevelRenderer::")
  print(Fore.GREEN+"┛")
- text_input = input("Введите Число : ")
+ text_input = input(Fore.YELLOW+" Введите Число : "+Fore.WHITE)
  if "1" in text_input.lower():
   os.system("clear");
   time.sleep(2);
   logo("player");
   exit_logo();
   print(Fore.WHITE+"[1] : Player::setSpeed(float)");
-  print("[2] : LocalPlayer::setSneaking(bool)")
-  print("[3] : LocalPlayer::setSprinting(bool)");
+  print(Fore.RED+"[2]"+Fore.WHITE+" : LocalPlayer::setSneaking(bool)")
+  print(Fore.RED+"[3]"+Fore.WHITE+" : LocalPlayer::setSprinting(bool)");
   print("[4] : LocalPlayer::setLeavingLevel(bool)");
   print("[5] : LocalPlayer::setPortalEffectTime(float)");
   text_1_input = input("Введите Число : ");
