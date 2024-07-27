@@ -83,11 +83,13 @@ def author():
 def search(num):
  if(num == "1"):
   print("\n");
+  print(Fore.RED+"┏");
   print(Fore.RED+"┣"+Fore.WHITE+"NAME : Player::setSpeed(float)");
   print(Fore.RED+"┣"+Fore.WHITE+"SYMBOL : _ZN6Player8setSpeedEf");
   print(Fore.RED+"┣"+Fore.WHITE+"ARGUMENT : float");
   print(Fore.RED+"┣"+Fore.WHITE+"CLASS : Player");
   print(Fore.RED+"┣"+Fore.WHITE+"NAME : setSpeed");  
+  print(Fore.RED+"┗");
   print("\n");
   text_exit = input(Fore.WHITE+"Если вы Хотите вернуться Назад Нажмите "+Fore.RED+"Enter");
   if "" in text_exit.lower():
