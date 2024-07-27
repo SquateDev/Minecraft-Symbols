@@ -35,7 +35,21 @@ def exit_logo():
   time.sleep(0.3);
   print(Fore.RED+"[01]"+Fore.WHITE+" : Exit ALL");
   print(Fore.RED+"[0]"+Fore.WHITE+" : Exit Player");
-
+  text_1_input = input(Fore.BLUE+"Введите Число : ");
+  if "0" in text_1_input.lower():
+   os.system("clear");
+   os.system("exit");
+   time.sleep(0.2);
+   menu();
+  if "01" in text_1_input.lower():
+   os.system("clear");
+   os.system("exit");
+   print(Fore.RED+"Exit!!!");
+  if "1" in text_1_input.lower():
+   os.system("clear");
+   logo("player");
+   search("1");
+   
 def funcs():
  print(Fore.GREEN+"[1]"+Fore.WHITE+" : Player::setSpeed(float)");
  time.sleep(0.3);
@@ -58,7 +72,8 @@ def funcs():
  print(Fore.GREEN+"[10]"+Fore.WHITE+" : LocalPlayer::setOffhandSlot(ItemInstance const&)");
  time.sleep(0.3);
  print(Fore.GREEN+"[11]"+Fore.WHITE+" : LocalPlayer::move(Vec3 const&)");
- 
+
+
 def author():
  time.sleep(0.4);
  print(Fore.RED+"\nAuthor : "+Fore.BLUE+"Squate_Dev");
@@ -77,6 +92,7 @@ def search(num):
   if "" in text_exit.lower():
    os.system("clear");
    logo("player");
+   exit_logo();
    funcs();
    author();
  if(num == "2"):  
@@ -97,19 +113,4 @@ def menu():
   exit_logo(); 
   funcs();
   author();
-  text_1_input = input(Fore.BLUE+"Введите Число : ");
-  if "0" in text_1_input.lower():
-   os.system("clear");
-   os.system("exit");
-   time.sleep(0.2);
-   menu();
-  if "01" in text_1_input.lower():
-   os.system("clear");
-   os.system("exit");
-   print(Fore.RED+"Exit!!!");
-  if "1" in text_1_input.lower():
-   os.system("clear");
-   logo("player");
-   search("1");
-   
 menu();
