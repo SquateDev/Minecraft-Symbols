@@ -71,8 +71,8 @@ def search(num):
   print(Fore.RED+"┣"+Fore.WHITE+"ARGUMENT : float");
   print(Fore.RED+"┣"+Fore.WHITE+"CLASS : Player");
   print(Fore.RED+"┣"+Fore.WHITE+"NAME : setSpeed");  
- if(num == 2):
-  
+ if(num == 2):  
+  print("Hack!");
 
 def menu(): 
  logo("menu");
