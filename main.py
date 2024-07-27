@@ -32,9 +32,18 @@ def logo(text):
   print(Fore.GREEN + logo_player);
   
 def exit_logo():
-  print(Fore.RED+"[0]"+Fore.WHITE+"Exit Player");
-  
-  
+  print(Fore.RED+"[0]"+Fore.WHITE+" : Exit Player");
+
+def funcs():
+ print(Fore.GREEN+"[1]"+Fore.WHITE+" : Player::setSpeed(float)");
+ print(Fore.GREEN+"[2]"+Fore.WHITE+" : LocalPlayer::setSneaking(bool)")
+ print(Fore.GREEN+"[3]"+Fore.WHITE+" : LocalPlayer::setSprinting(bool)");
+ print(Fore.GREEN+"[4]"+Fore.WHITE+" : LocalPlayer::setLeavingLevel(bool)");
+ print(Fore.GREEN+"[5]"+Fore.WHITE+" : LocalPlayer::setPortalEffectTime(float)");
+
+def author():
+ print(Fore.RED+"Author : "+Fore.BLUE+"Squate_Dev");
+
 def menu(): 
  logo("menu");
  print(Fore.GREEN+"┓");
@@ -48,11 +57,8 @@ def menu():
   time.sleep(2);
   logo("player");
   exit_logo();
-  print(Fore.RED+"[1]"+Fore.WHITE+" : Player::setSpeed(float)");
-  print(Fore.RED+"[2]"+Fore.WHITE+" : LocalPlayer::setSneaking(bool)")
-  print(Fore.RED+"[3]"+Fore.WHITE+" : LocalPlayer::setSprinting(bool)");
-  print(Fore.RED+"[4]"+Fore.WHITE+" : LocalPlayer::setLeavingLevel(bool)");
-  print(Fore.RED+"[5]"+Fore.WHITE+" : LocalPlayer::setPortalEffectTime(float)");
+  funcs();
+  author();
   text_1_input = input(Fore.BLUE+"Введите Число : ");
   if "0" in text_1_input.lower():
    os.system("clear");
