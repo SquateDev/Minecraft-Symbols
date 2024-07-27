@@ -34,12 +34,12 @@ def logo(text):
 def exit_logo():
   time.sleep(0.3);
   funcs();
-  print(Fore.RED+"[01]"+Fore.WHITE+" : Exit ALL");
-  print(Fore.RED+"[0]"+Fore.WHITE+" : Exit Player");
+  print("");
+  print(Fore.YELLOW+"["+Fore.WHITE+"0"+Fore.YELLOW+"]"+Fore.WHITE+" : Exit Player");
+  print(Fore.YELLOW+"["+Fore.WHITE+"01"+Fore.YELLOW+"]"+Fore.WHITE+" : Exit ALL");
   text_1_input = input(Fore.BLUE+"Введите Число : ");
   if "0" in text_1_input.lower():
    os.system("clear");
-   os.system("exit");
    time.sleep(0.2);
    menu();
   if "01" in text_1_input.lower():
