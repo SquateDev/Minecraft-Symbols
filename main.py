@@ -37,7 +37,7 @@ def exit_logo():
   
 def menu(): 
  logo("menu");
- print(Fore.GREEB+"┓");
+ print(Fore.GREEN+"┓");
  print("┣ "+Fore.RED+"[1]"+Fore.WHITE+" Player::")
  print(Fore.GREEN+"┣ "+Fore.RED+"[2]"+Fore.WHITE+" MinecraftGame::")
  print(Fore.GREEN+"┣ "+Fore.RED+"[3]"+Fore.WHITE+"LevelRenderer::")
