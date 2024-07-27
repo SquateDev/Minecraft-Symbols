@@ -32,6 +32,8 @@ def logo(text):
   print(Fore.GREEN + logo_player);
   
 def exit_logo():
+  time.sleep(0.3);
+  print(Fore.RED+"[01]"+Fore.WHITE+" : Exit ALL");
   print(Fore.RED+"[0]"+Fore.WHITE+" : Exit Player");
 
 def funcs():
@@ -58,9 +60,20 @@ def funcs():
  print(Fore.GREEN+"[11]"+Fore.WHITE+" : LocalPlayer::move(Vec3 const&)");
  
 def author():
+ time.sleep(0.4);
  print(Fore.RED+"\nAuthor : "+Fore.BLUE+"Squate_Dev");
  print(Fore.RED+"Version"+Fore.WHITE+" : 0.0.3");
- 
+
+def search(num):
+ if(num == 1):
+  print(Fore.RED+"┣"+Fore.WHITE+"NAME : Player::setSpeed(float)");
+  print(Fore.RED+"┣"+Fore.WHITE+"SYMBOL : _ZN6Player8setSpeedEf");
+  print(Fore.RED+"┣"+Fore.WHITE+"ARGUMENT : float");
+  print(Fore.RED+"┣"+Fore.WHITE+"CLASS : Player");
+  print(Fore.RED+"┣"+Fore.WHITE+"NAME : setSpeed");  
+ if(num == 2):
+  
+
 def menu(): 
  logo("menu");
  print(Fore.GREEN+"┓");
@@ -71,10 +84,9 @@ def menu():
  text_input = input(Fore.YELLOW+" Введите Число : "+Fore.WHITE)
  if "1" in text_input.lower():
   os.system("clear");
-  time.sleep(2);
+  time.sleep(0.9);
   logo("player");
-  exit_logo();
-  
+  exit_logo(); 
   funcs();
   author();
   text_1_input = input(Fore.BLUE+"Введите Число : ");
@@ -83,7 +95,13 @@ def menu():
    os.system("exit");
    time.sleep(0.2);
    menu();
-  if "1" in text_1_input.lower():
+  if "01" in text_1_input.lower():
    os.system("clear");
+   os.system("exit");
+   print(Fore.RED+"Exit!!!");
+  if text_1_input.lower():
+   os.system("clear");
+   logo("player");
+   search(text_1_input);
    
 menu();
