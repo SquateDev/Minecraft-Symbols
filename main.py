@@ -65,13 +65,13 @@ def author():
  print(Fore.RED+"Version"+Fore.WHITE+" : 0.0.3");
 
 def search(num):
- if(num == 1):
+ if(num == "1"):
   print(Fore.RED+"┣"+Fore.WHITE+"NAME : Player::setSpeed(float)");
   print(Fore.RED+"┣"+Fore.WHITE+"SYMBOL : _ZN6Player8setSpeedEf");
   print(Fore.RED+"┣"+Fore.WHITE+"ARGUMENT : float");
   print(Fore.RED+"┣"+Fore.WHITE+"CLASS : Player");
   print(Fore.RED+"┣"+Fore.WHITE+"NAME : setSpeed");  
- if(num == 2):  
+ if(num == "2"):  
   print("Hack!");
 
 def menu(): 
