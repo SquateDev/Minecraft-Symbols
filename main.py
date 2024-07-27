@@ -25,18 +25,20 @@ def logo(text):
                                                      
 """;
  if (text == "menu"):
-  print(logo_menu);
+  os.system("clear");
+  print(Fore.RED + logo_menu);
  if(text == "player"):
-  print(logo_player);
+  os.system("clear");
+  print(Fore.GREEN + logo_player);
   
 def exit_logo():
-  print(Fore.RED+"[0] Exit Player");
+  print(Fore.RED+"[0]"+Fore.WHITE+"Exit Player");
   
   
 def menu(): 
  logo("menu");
- print("┓");
- print("┣ [1] Player::")
+ print(Fore.RED+"┓");
+ print("┣ "+Fore.RED+"[1]"+Fore.WHITE+" Player::")
  print("┣ [2] MinecraftGame::")
  print("┣ [3] LevelRenderer::")
  print("┛")
@@ -46,7 +48,7 @@ def menu():
   time.sleep(2);
   logo("player");
   exit_logo();
-  print("[1] : Player::setSpeed(float)");
+  print(Fore.WHITE"[1] : Player::setSpeed(float)");
   print("[2] : LocalPlayer::setSneaking(bool)")
   print("[3] : LocalPlayer::setSprinting(bool)");
   print("[4] : LocalPlayer::setLeavingLevel(bool)");
