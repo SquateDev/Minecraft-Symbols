@@ -99,9 +99,9 @@ def menu():
    os.system("clear");
    os.system("exit");
    print(Fore.RED+"Exit!!!");
-  if text_1_input.lower():
+  if "1" in text_1_input.lower():
    os.system("clear");
    logo("player");
-   search(text_1_input);
+   search("1");
    
 menu();
