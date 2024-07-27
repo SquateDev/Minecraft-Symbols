@@ -36,13 +36,29 @@ def exit_logo():
 
 def funcs():
  print(Fore.GREEN+"[1]"+Fore.WHITE+" : Player::setSpeed(float)");
+ time.sleep(0.3);
  print(Fore.GREEN+"[2]"+Fore.WHITE+" : LocalPlayer::setSneaking(bool)")
+ time.sleep(0.3);
  print(Fore.GREEN+"[3]"+Fore.WHITE+" : LocalPlayer::setSprinting(bool)");
+ time.sleep(0.3);
  print(Fore.GREEN+"[4]"+Fore.WHITE+" : LocalPlayer::setLeavingLevel(bool)");
+ time.sleep(0.3);
  print(Fore.GREEN+"[5]"+Fore.WHITE+" : LocalPlayer::setPortalEffectTime(float)");
-
+ time.sleep(0.3);
+ print(Fore.GREEN+"[6]"+Fore.WHITE+" : LocalPlayer::setPos(Vec3 const&)");
+ time.sleep(0.3);
+ print(Fore.GREEN+"[7]"+Fore.WHITE+" : Player::setPlayerGameType(GameType)");
+ time.sleep(0.3);
+ print(Fore.GREEN+"[8]"+Fore.WHITE+" : Player::isInCreativeMode()");
+ time.sleep(0.3);
+ print(Fore.GREEN+"[9]"+Fore.WHITE+" : Player::getSelectedItem()");
+ time.sleep(0.3);
+ print(Fore.GREEN+"[10]"+Fore.WHITE+" : LocalPlayer::setOffhandSlot(ItemInstance const&)");
+ time.sleep(0.3);
+ print(Fore.GREEN+"[11]"+Fore.WHITE+" : LocalPlayer::move(Vec3 const&)");
+ 
 def author():
- print(Fore.RED+"\n           Author : "+Fore.BLUE+"Squate_Dev");
+ print(Fore.RED+"\nAuthor : "+Fore.BLUE+"Squate_Dev");
  print(Fore.RED+"Version"+Fore.WHITE+" : 0.0.3");
  
 def menu(): 
@@ -58,6 +74,7 @@ def menu():
   time.sleep(2);
   logo("player");
   exit_logo();
+  
   funcs();
   author();
   text_1_input = input(Fore.BLUE+"Введите Число : ");
