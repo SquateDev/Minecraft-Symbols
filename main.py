@@ -42,8 +42,9 @@ def funcs():
  print(Fore.GREEN+"[5]"+Fore.WHITE+" : LocalPlayer::setPortalEffectTime(float)");
 
 def author():
- print(Fore.RED+"Author : "+Fore.BLUE+"Squate_Dev");
-
+ print(Fore.RED+"\n           Author : "+Fore.BLUE+"Squate_Dev");
+ print(Fore.RED+"Version"+Fore.WHITE+" : 0.0.3");
+ 
 def menu(): 
  logo("menu");
  print(Fore.GREEN+"┓");
