@@ -71,6 +71,12 @@ def search(num):
   print(Fore.RED+"┣"+Fore.WHITE+"ARGUMENT : float");
   print(Fore.RED+"┣"+Fore.WHITE+"CLASS : Player");
   print(Fore.RED+"┣"+Fore.WHITE+"NAME : setSpeed");  
+  text_exit = input(Fore.WHITE+"Если вы Хотите вернуться Назад Нажмите "+Fore.RED+"Enter");
+  if text_exit.lower():
+   os.system("clear");
+   logo("player");
+   funcs();
+   author();
  if(num == "2"):  
   print("Hack!");
 
