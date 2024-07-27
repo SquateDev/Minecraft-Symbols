@@ -74,7 +74,7 @@ def search(num):
   print(Fore.RED+"┣"+Fore.WHITE+"NAME : setSpeed");  
   print("\n");
   text_exit = input(Fore.WHITE+"Если вы Хотите вернуться Назад Нажмите "+Fore.RED+"Enter");
-  if text_exit.lower():
+  if "" in text_exit.lower():
    os.system("clear");
    logo("player");
    funcs();
