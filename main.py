@@ -33,6 +33,7 @@ def logo(text):
   
 def exit_logo():
   time.sleep(0.3);
+  funcs();
   print(Fore.RED+"[01]"+Fore.WHITE+" : Exit ALL");
   print(Fore.RED+"[0]"+Fore.WHITE+" : Exit Player");
   text_1_input = input(Fore.BLUE+"Введите Число : ");
@@ -111,6 +112,5 @@ def menu():
   time.sleep(0.9);
   logo("player");
   exit_logo(); 
-  funcs();
   author();
 menu();
